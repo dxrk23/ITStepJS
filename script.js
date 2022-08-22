@@ -1,7 +1,5 @@
-let a = prompt();
+let b = prompt();
 
-a = (+a / 10) + +a
+b = (+b / 10) + +b
 
-alert('$' + a)
-
-// test
+alert('$' + b)
