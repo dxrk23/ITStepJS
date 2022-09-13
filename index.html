@@ -5,10 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
-    
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="calc">
+        <div class="upper">
+            <div class="display" id="display"></div>
+        </div>
+        <div class="lower">
+            <div class="button" onclick="handleOperator('+')">+</div>
+            <div class="button" onclick="handleOperator('-')">-</div>
+            <div class="button" onclick="handleOperator('x')">x</div>
+            <div class="button" onclick="handleOperator('/')">/</div>
+
+            <div class="button" onclick="handleNumber(1)">1</div>
+            <div class="button" onclick="handleNumber(2)">2</div>
+            <div class="button" onclick="handleNumber(3)">3</div>
+            <div class="button" onclick="handleNumber('.')">.</div>
+
+            
+            <div class="button" onclick="handleNumber(4)">4</div>
+            <div class="button" onclick="handleNumber(5)">5</div>
+            <div class="button" onclick="handleNumber(6)">6</div>
+            <div class="button" onclick="handleNumber(0)">0</div>
+
+            <div class="button" onclick="handleNumber(7)">7</div>
+            <div class="button" onclick="handleNumber(8)">8</div>
+            <div class="button" onclick="handleNumber(9)">9</div>
+            <div class="button" onclick="calculate()">=</div>
+
+            <div class="button clear" onclick="clearDisplay()">AC</div>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
