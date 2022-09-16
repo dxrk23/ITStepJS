@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="--create-form" id="createform">
+        <div class="--input">
+            <input type="text" placeholder="name" id="name" oninput="handleName()">
+        </div>
+        <div class="--input">
+            <input type="text" placeholder="max fuel" id="maxfuel" oninput="handleMaxFuel()">
+        </div>
+        <div class="--input">
+            <input type="text" placeholder="fuel consumption" id="fuelC" oninput="handleFuelC()">
+        </div>
+        <div class="--input">
+            <input type="text" placeholder="speed" id="speed" oninput="handleSpeed()">
+        </div>
+        <button onclick="createCar()">Create new Car</button>
+    </div>
+    <div class="--show-div" id="showdiv">
+        <table id="table">
+
+        </table>
+        <div class="--input">
+            <input type="text" placeholder="fuel liters" id="fuelInput" oninput="handleFuelInput()">
+            <button onclick="handleFuel()">fuel</button>
+        </div>
+        <div class="--input">
+            <input type="text" placeholder="hours to drive" id="hoursInput" oninput="handleHourInput()">
+            <button onclick="handleDrive()">drive</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

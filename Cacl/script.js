@@ -1,12 +1,13 @@
 const display = document.getElementById('display')
-let operator = null
 let num1 = ''
 let num2 = ''
 let res = null
+let operator = null
 
 function handleNumber(number) {
     if (number === '.'){
-        if (display.textContent.charAt(display.textContent.length - 1) === '.' || display.textContent.charAt(display.textContent.length - 1) === '' ) {
+        if (display.textContent.charAt(display.textContent.length - 1) === '.' 
+        || display.textContent.charAt(display.textContent.length - 1) === '' ) {
             return
         }
     }
